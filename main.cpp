@@ -22,7 +22,7 @@ int main()
 
   if ( input == 'A' || input == 'a' )
   {
-  cout<<"What is the item? \n";
+  cout<<"What is the item?\n";
   cin>>Itemname;
 
   if ( numItems > 4)
