@@ -8,6 +8,7 @@ int main()
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
+  string Itemname;
              
      do 
    {
@@ -22,22 +23,20 @@ int main()
   if ( input == 'A' || input == 'a' )
   {
   cout<<"What is the item? \n";
-  cin>>list[numItems+1];
-  }
-  
- // list[0] = 
- // list[1] = 
- // list[2] =
- // list[3] =
- // list[4] =
- // list[5] =
+  cin>>Itemname;
 
-  if ( numItems > 5)
+  if ( numItems > 4)
   {
   cout<<"You'll need a bigger list!\n";
   }
+  else
+  {
+  list[numItems]=Itemname;
+  numItems = numItems + 1;
   }
 
+  }
+}
   while (!( input == 'Q' || input == 'q' ));
   return 0;
 }
