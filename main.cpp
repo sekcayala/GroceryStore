@@ -28,15 +28,14 @@ int main()
   }
 }
 
-  while (!( input == 'Q' || input == 'q' ));
-  
-       cout<<"==ITEMS TO BUY==\n";
+ while(!(input== 'Q' || input== 'q'));
 
 if (grcl.size()>0)
 {
      for (int j=0; j < grcl.size(); j++)
-        {
-            cout<<grcl.at(j)<<endl;
+        {   
+            cout<<"==ITEMS TO BUY==\n";
+            cout<<j+1<<" "<<grcl.at(j)<<endl;
         }
 }  
 else
