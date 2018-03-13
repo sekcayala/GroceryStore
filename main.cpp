@@ -6,12 +6,9 @@ using namespace std;
 
 int main()
 {
-  vector<int> grcl;
-  int length = grcl.size();
-  string list[5]; //array of 5 strings
-  int numItems = 0;
+  vector<string> grcl;
+  string items;
   char input;
-  string Itemname;
 
      do 
    {
@@ -26,28 +23,26 @@ int main()
   if ( input == 'A' || input == 'a' )
   {
   cout<<"What is the item?\n";
-  cin>>Itemname;
-
-  if ( numItems > 4)
-  {
-  cout<<"You'll need a bigger list!\n";
-  }
-  else
-  {
-  list[numItems]=Itemname;
-  numItems = numItems + 1;
-  }
-
+  cin>>items;
+  grcl.push_back(items);
   }
 }
 
   while (!( input == 'Q' || input == 'q' ));
   
        cout<<"==ITEMS TO BUY==\n";
-     for (int j=0; j<5; j++)
+
+if (grcl.size()>0)
+{
+     for (int j=0; j < grcl.size(); j++)
         {
-            cout<<j+1<<" "<<list[j]<<endl;
+            cout<<grcl.at(j)<<endl;
         }
+}  
+else
+{
+cout<<"No items to buy!\n";
+}
 
   return 0;
 }
