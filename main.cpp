@@ -1,10 +1,13 @@
 //Author: Alejandro Ayala
 #include<iostream>
 #include<string>
+#include<vector>
 using namespace std;
 
 int main()
 {
+  vector<int> grcl;
+  int length = grcl.size();
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
